@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# Wymuszenie HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://plikdruk.pl/$1 [R=301,L]
+
+# Usunięcie www
+RewriteCond %{HTTP_HOST} ^www\.plikdruk\.pl$ [NC]
+RewriteRule ^(.*)$ https://plikdruk.pl/$1 [R=301,L]
+
+# Usunięcie index.html
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+RewriteRule ^index\.html$ https://plikdruk.pl/ [R=301,L]
