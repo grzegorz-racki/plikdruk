@@ -310,16 +310,21 @@
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1) !important;
     }
     
-    /* Efekt dla przycisków w cenniku - ujednolicony dla wszystkich przycisków typu outline-dark */
+    /* Efekt dla przycisków w cenniku */
     #services .btn-outline-dark,
     footer .btn-outline-dark {
       transition: all 0.3s ease;
       border-width: 2px !important;
       font-weight: 500;
       background-color: transparent;
-      color: #ccc;
+      color: #ccc;  /* kolor dla polityki cookie (jasnoszary) */
       border-color: #6c757d;
       text-decoration: none !important;
+    }
+    
+    /* Osobny styl tylko dla przycisku Pobierz pełny cennik PDF */
+    #services .btn-outline-dark {
+      color: #212529;  /* czarny kolor tylko dla cennika */
     }
     
     #services .btn-outline-dark:hover,
