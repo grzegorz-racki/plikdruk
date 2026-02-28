@@ -307,6 +307,20 @@
       }
     }
     
+    /* linki w Kontakt */
+    .contact-link {
+      color: #0d6efd;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-weight: 400;
+    }
+
+    .contact-link:hover {
+      color: #003d80; /* ciemniejszy niebieski */
+      font-weight: 700; /* pogrubienie */
+      text-decoration: none; /* bez podkreślenia */
+    }
+      
     /* Efekt dla mapy */
     iframe {
       transition: opacity 0.5s ease, box-shadow 0.3s ease;
@@ -754,8 +768,8 @@
       <div class="col-md-6 order-2 order-md-1">
         <p><i class="fa-solid fa-building"></i> Adres: <strong>CHR GALAXY (parter)</strong></p>
         <p><i class="fa-solid fa-phone"></i> Telefon: 91 489 55 40</p>
-        <p><i class="fa-solid fa-envelope"></i> E-mail: <a href="mailto:druk@plikdruk.pl">druk@plikdruk.pl</a></p>
-        <p><i class="fa-solid fa-globe"></i> Strona: <a href="https://www.plikdruk.pl">www.plikdruk.pl</a></p>
+        <p><i class="fa-solid fa-envelope"></i> E-mail: <a href="mailto:druk@plikdruk.pl" class="contact-link">druk@plikdruk.pl</a></p>
+        <p><i class="fa-solid fa-globe"></i> Strona: <a href="https://www.plikdruk.pl" class="contact-link" target="_blank" rel="noopener">www.plikdruk.pl</a></p>
         <p><img src="plikdruk.webp" alt="Mapa Plikdruk.pl" width="560" height="272" class="img-fluid rounded"></p>
       </div>
       <!-- Mapa Google -->
