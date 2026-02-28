@@ -1,177 +1,407 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Druk cyfrowy Szczecin – Plikdruk.pl | Ksero, wizytówki, pieczątki</title>
+  <!-- ===== SEARCH ENGINE OPTIMIZATION (SEO) ===== -->
+  <title>Druk cyfrowy Szczecin – Plikdruk.pl | Ksero, wizytówki, pieczątki</title>
+  <meta name="description" content="Druk cyfrowy Szczecin – Plikdruk.pl. Profesjonalne ksero, wizytówki, pieczątki, oprawa prac, skanowanie i fotografia. Szybka realizacja w CHR Galaxy.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://plikdruk.pl/">
+  <meta property="og:title" content="Druk cyfrowy Szczecin – Plikdruk.pl">
+  <meta property="og:description" content="Ksero, wizytówki, pieczątki, oprawa prac i fotografia w Szczecinie.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://plikdruk.pl/">
 
-<meta name="description" content="Druk cyfrowy Szczecin – Plikdruk.pl. Profesjonalne ksero, wizytówki, pieczątki, oprawa prac, skanowanie i fotografia. Szybka realizacja w CHR Galaxy.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://plikdruk.pl/">
+  <!-- ===== SECURITY: CONTENT SECURITY POLICY (CSP) ===== -->
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com;
+    style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com;
+    img-src 'self' data: https:;
+    frame-src https://www.google.com;
+    font-src https://cdnjs.cloudflare.com https://fonts.gstatic.com;
+    connect-src 'self' https://www.google.com;
+  ">
 
-<!-- Open Graph -->
-<meta property="og:title" content="Druk cyfrowy Szczecin – Plikdruk.pl">
-<meta property="og:description" content="Ksero, wizytówki, pieczątki, oprawa prac i fotografia w Szczecinie.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://plikdruk.pl/">
+  <!-- ===== FAVICONS & WEB APP MANIFEST ===== -->
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
 
-<!-- Security CSP -->
-<meta http-equiv="Content-Security-Policy"
-content="
-default-src 'self';
-script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com;
-style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com;
-img-src 'self' data: https:;
-frame-src https://www.google.com;
-font-src https://cdnjs.cloudflare.com https://fonts.gstatic.com;
-connect-src 'self' https://www.google.com;
-">
+  <!-- ===== STYLESHEETS (CSS) ===== -->
+  <!-- Preconnect & Preload dla optymalizacji -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" as="style">
+  <!-- Biblioteki zewnętrzne -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" rel="stylesheet">
 
-<!-- Favicon -->
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
-
-<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" as="style">    
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" rel="stylesheet" >
+  <!-- ===== STYLE NIIEJSANE (CUSTOM) ===== -->
+  <style>
+    /* Płynne przewijanie */
+    html {
+      scroll-behavior: smooth;
+    }
     
-<style>
-body { scroll-behavior:smooth; }
+    body { 
+      scroll-behavior: smooth; 
+      overflow-x: hidden;
+    }
+
+    /* Płynne przejścia między sekcjami - efekt fade i przesunięcie */
+    section {
+      opacity: 1;
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
     
-@font-face {
-  font-display: swap;
-}
+    /* Dodatkowy efekt dla sekcji pojawiających się podczas przewijania */
+    section:not(#home) {
+      animation: fadeInUp 0.8s ease-out;
+    }
     
-/* Navbar */
-.navbar-brand { transition:0.3s; }
-.navbar-brand:hover { transform:scale(1.05); color:#00c8ff !important; }
-section[id] {
-  scroll-margin-top: 40px; /* wysokość navbaru + trochę marginesu */
-}
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
-/* Header underline */
-.animated-underline{
-display:block;height:6px;width:0;background:#dc3545;
-border-radius:3px;position:absolute;bottom:-10px;left:0;
-transition:width 1s ease;
-}
-#home h1.loaded .animated-underline{width:100%;}
+    /* Navbar */
+    .navbar-brand { transition: 0.3s; }
+    .navbar-brand:hover { transform: scale(1.05); color: #00c8ff !important; }
+    section[id] { scroll-margin-top: 40px; }
 
-/* Oferta icons */
-#about i{transition:0.3s;}
-#about i:hover{transform:scale(1.15);}
+    /* Animacja podkreślenia nagłówka */
+    .animated-underline {
+      display: block;
+      height: 6px;
+      width: 0;
+      background: #dc3545;
+      border-radius: 3px;
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      transition: width 1s ease;
+    }
+    #home h1.loaded .animated-underline { width: 100%; }
 
-/* Tables */
-#services table{background:#f8f9fa;border-radius:8px;}
-#services h4::after{
-content:'';display:block;width:60px;height:2px;background:#0d6efd;
-margin-top:4px;transition:0.3s;
-}
-#services h4:hover::after{width:100px;}
+    /* Oferta – ikony */
+    #about i { transition: 0.3s; }
+    #about i:hover { transform: scale(1.15); }
 
-/* Form */
-#upload .form-control:focus{
-border-color:#0d6efd;
-box-shadow:0 0 8px rgba(13,110,253,.2);
-}
-#upload .btn-primary:hover{
-transform:translateY(-2px);
-box-shadow:0 4px 12px rgba(13,110,253,.3);
-}
+    /* Cennik – tabele i nagłówki */
+    #services table { background: #f8f9fa; border-radius: 8px; }
+    #services h4::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 2px;
+      background: #0d6efd;
+      margin-top: 4px;
+      transition: 0.3s;
+    }
+    #services h4:hover::after { width: 100px; }
 
-/* Cookie popup */
-#cookiePopup{
-display:none;position:fixed;inset:0;
-background:rgba(0,0,0,.5);z-index:9999;
-}
-#cookiePopup .popup-content{
-background:#fff;padding:30px;max-width:600px;
-margin:100px auto;border-radius:8px;position:relative;
-}
-.close-btn{position:absolute;top:10px;right:15px;cursor:pointer;}
+    /* Formularz przesyłania plików */
+    #upload .form-control:focus {
+      border-color: #0d6efd;
+      box-shadow: 0 0 8px rgba(13, 110, 253, 0.2);
+    }
+    #upload .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+    }
+
+    /* Okno cookie (popup) */
+    #cookiePopup {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 9999;
+      animation: fadeIn 0.4s ease;
+    }
     
-/* Premium efekty formularza */
-#upload .form-control {
-border: 1px solid #dee2e6;
-transition: box-shadow 0.3s ease, border-color 0.3s ease;
-}
-
-#upload .form-control:focus {
-border-color: #007bff;
-box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
-outline: none;
-}
-
-/* Premium przycisk hover */
-#upload .btn-primary:hover {
-transform: translateY(-2px);
-box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
-}
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
     
-</style>
+    #cookiePopup .popup-content {
+      background: #fff;
+      padding: 30px;
+      max-width: 600px;
+      margin: 100px auto;
+      border-radius: 8px;
+      position: relative;
+      animation: slideDown 0.4s ease;
+    }
+    
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      cursor: pointer;
+      font-size: 24px;
+      transition: transform 0.2s ease;
+    }
+    
+    .close-btn:hover {
+      transform: scale(1.2);
+      color: #dc3545;
+    }
 
-<!-- Schema.org -->
-<script type="application/ld+json">
-{
- "@context":"https://schema.org",
- "@type":"LocalBusiness",
- "name":"Plikdruk.pl",
- "image":"https://plikdruk.pl/plikdruk.jpg",
- "address":{
-   "@type":"PostalAddress",
-   "addressLocality":"Szczecin",
-   "addressCountry":"PL"
- },
- "telephone":"+48914895540",
- "url":"https://plikdruk.pl"
-}
-</script>
+    /* Dodatkowe efekty formularza */
+    #upload .form-control {
+      border: 1px solid #dee2e6;
+      transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+    }
+    
+    #upload .form-control:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+    
+    /* Efekt ripple dla przycisku w popup cookie */
+    #cookiePopup .btn-primary {
+      position: relative;
+      overflow: hidden;
+      transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    }
+    
+    #cookiePopup .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(13, 110, 253, 0.4);
+    }
+    
+    #cookiePopup .btn-primary:active {
+      transform: translateY(0);
+    }
+    
+    #cookiePopup .btn-primary::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 5px;
+      height: 5px;
+      background: rgba(255, 255, 255, 0.7);
+      opacity: 0;
+      border-radius: 100%;
+      transform: scale(1, 1) translate(-50%);
+      transform-origin: 50% 50%;
+    }
+    
+    #cookiePopup .btn-primary:focus:not(:active)::after {
+      animation: ripple 0.6s ease-out;
+    }
+    
+    @keyframes ripple {
+      0% {
+        transform: scale(0, 0) translate(-50%, -50%);
+        opacity: 0.5;
+      }
+      100% {
+        transform: scale(20, 20) translate(-50%, -50%);
+        opacity: 0;
+      }
+    }
+    
+    /* Dodatkowe efekty dla kart w ofercie */
+    #about .col-md-6, #about li {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    #about .col-md-6:hover {
+      transform: translateY(-5px);
+    }
+    
+    #about li:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1) !important;
+    }
+    
+    /* Efekt dla przycisków w cenniku - ujednolicony dla wszystkich przycisków typu outline-dark */
+    #services .btn-outline-dark,
+    footer .btn-outline-dark {
+      transition: all 0.3s ease;
+      border-width: 2px !important;
+      font-weight: 500;
+      background-color: transparent;
+      color: #ccc;
+      border-color: #6c757d;
+      text-decoration: none !important;
+    }
+    
+    #services .btn-outline-dark:hover,
+    footer .btn-outline-dark:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+      background-color: #343a40;
+      border-color: #343a40;
+      color: #fff !important;
+    }
+    
+    #services .btn-outline-dark:active,
+    footer .btn-outline-dark:active {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    #toggleCennik {
+      transition: all 0.3s ease;
+    }
+    
+    #toggleCennik:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Animacja dla tabel w cenniku */
+    #services table {
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    /* Płynne pojawianie się rozwijanego cennika */
+    #pelnyCennik.collapsing {
+      transition: all 0.5s ease;
+    }
+    
+    #pelnyCennik .card {
+      animation: fadeScale 0.5s ease;
+    }
+    
+    @keyframes fadeScale {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    
+    /* Efekt dla mapy */
+    iframe {
+      transition: opacity 0.5s ease, box-shadow 0.3s ease;
+      border-radius: 8px;
+    }
+    
+    iframe:hover {
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+    
+    /* Animacja dla stopki */
+    footer {
+      position: relative;
+      overflow: hidden;
+    }
+    
+    footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #fff, transparent);
+      animation: shimmer 3s infinite;
+    }
+    
+    @keyframes shimmer {
+      0% { left: -100%; }
+      100% { left: 100%; }
+    }
+      
+    .copyright-text {
+       margin-bottom: 10px;
+    }
+      
+    /* Usunięcie domyślnych stylów dla linków w footerze */
+    footer a {
+      text-decoration: none !important;
+    }
+  </style>
 
+  <!-- ===== SCHEMA.ORG (DANE STRUKTURALNE) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Plikdruk.pl",
+    "image": "https://plikdruk.pl/plikdruk.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Szczecin",
+      "addressCountry": "PL"
+    },
+    "telephone": "+48914895540",
+    "url": "https://plikdruk.pl"
+  }
+  </script>
 </head>
 <body>
 
+<!-- ===== NAVIGATION (MENU) ===== -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-<div class="container">
-<a class="navbar-brand" href="#">Plikdruk.pl</a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarNav">
-<ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link" href="#">Start</a></li>
-<li class="nav-item"><a class="nav-link" href="#about">Oferta</a></li>
-<li class="nav-item"><a class="nav-link" href="#services">Cennik</a></li>
-<li class="nav-item"><a class="nav-link" href="#upload">Prześlij plik</a></li>
-<li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
-</ul>
-</div>
-</div>
+  <div class="container">
+    <a class="navbar-brand" href="#">Plikdruk.pl</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Start</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">Oferta</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Cennik</a></li>
+        <li class="nav-item"><a class="nav-link" href="#upload">Prześlij plik</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
+<!-- ===== HEADER / HERO ===== -->
 <header id="home" class="pt-5 mt-5 text-center container">
-<h1 class="fw-bold position-relative d-inline-block">
-Druk cyfrowy – Plikdruk.pl
-<span class="animated-underline"></span>
-</h1>
-<p class="lead mt-4">Szybki druk cyfrowy, ksero, pieczątki i fotografia w Szczecinie.</p>
-<a href="#upload" class="btn btn-primary btn-lg">Prześlij plik do wydruku</a>
+  <h1 class="fw-bold position-relative d-inline-block">
+    Druk cyfrowy – Plikdruk.pl
+    <span class="animated-underline"></span>
+  </h1>
+  <p class="lead mt-4">Szybki druk cyfrowy, ksero, pieczątki i fotografia w Szczecinie.</p>
+  <a href="#upload" class="btn btn-primary btn-lg">Prześlij plik do wydruku</a>
 </header>
 
-<!-- OFERTA -->
+<!-- ===== OFERTA (SECTION ABOUT) ===== -->
 <section id="about" class="container py-5">
   <h2 class="text-center mb-5 fw-bold" style="letter-spacing: 0.5px;">Oferta</h2>
 
-  <!-- DESKTOP GRID -->
+  <!-- Wersja desktop (siatka) -->
   <div class="row g-4 text-center d-none d-md-flex">
     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
       <i class="fa-solid fa-copy mb-3 fa-3x text-primary"></i>
@@ -186,7 +416,7 @@ Druk cyfrowy – Plikdruk.pl
     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
       <i class="fa-solid fa-stamp mb-3 fa-3x text-primary"></i>
       <h5 class="fw-semibold">STEMPLE</h5>
-        <p class="small text-muted">Realizacja w 24h (dni robocze). Sprzedaż i produkcja wszelkich pieczątek. Automaty firmy <a href="https://colop.pl/">COLOP.</a></p>
+      <p class="small text-muted">Realizacja w 24h (dni robocze). Sprzedaż i produkcja wszelkich pieczątek. Automaty firmy <a href="https://colop.pl/">COLOP.</a></p>
     </div>
     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
       <i class="fa-solid fa-camera mb-3 fa-3x text-primary"></i>
@@ -220,7 +450,7 @@ Druk cyfrowy – Plikdruk.pl
     </div>
   </div>
 
-  <!-- MOBILNA LISTA -->
+  <!-- Wersja mobilna (lista) -->
   <ul class="list-unstyled d-block d-md-none">
     <li class="mb-4 p-3 shadow-sm rounded d-flex align-items-start">
       <i class="fa-solid fa-copy fa-2x me-3 text-primary"></i>
@@ -288,424 +518,405 @@ Druk cyfrowy – Plikdruk.pl
   </ul>
 </section>
 
-<!-- CENNIK -->    
+<!-- ===== CENNIK (SECTION SERVICES) ===== -->
 <section id="services" class="py-5" style="background-color: #f8f9fa;">
-<div class="container">
+  <div class="container">
+    <h2 class="text-center mb-3 fw-bold" style="letter-spacing: 0.5px;">Cennik</h2>
+    <div class="text-center mb-4">
+      <a href="plikdruk-cennik.pdf" class="btn btn-outline-dark px-4 py-2" target="_blank" rel="noopener">
+        Pobierz pełny cennik PDF
+      </a>
+    </div>
 
-<h2 class="text-center mb-3 fw-bold" style="letter-spacing: 0.5px;">Cennik</h2>
-<div class="text-center mb-4">
-<a href="plikdruk-cennik.pdf" class="btn btn-outline-dark px-4 py-2" target="_blank" rel="noopener">
-Pobierz pełny cennik PDF
-</a>
-</div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <!-- Wersja desktop: podstawowe tabele -->
+        <div class="d-none d-md-block">
+          <h4 class="mt-4 mb-3 text-uppercase fw-semibold">Druk i ksero</h4>
+          <table class="table table-borderless table-sm align-middle mb-4">
+            <tbody>
+              <tr><td>Ksero czarno-białe A4 – 1 strona</td><td class="text-end">1,20 zł</td></tr>
+              <tr><td>Ksero czarno-białe A4 11–50 stron ADF</td><td class="text-end">1,00 zł</td></tr>
+              <tr><td>Druk czarno-biały A4 – 1 strona</td><td class="text-end">1,70 zł</td></tr>
+              <tr><td>Druk/ksero kolor A4 – 1 strona</td><td class="text-end">4,90 zł</td></tr>
+              <tr><td>Druk/ksero kolor foto A3</td><td class="text-end">15,00 zł</td></tr>
+              <tr><td>Wizytówki kolor 100 szt.</td><td class="text-end">79,00 zł</td></tr>
+            </tbody>
+          </table>
 
-<div class="row justify-content-center">
-<div class="col-lg-8">
+          <h4 class="mt-4 mb-3 text-uppercase fw-semibold">Skanowanie</h4>
+          <table class="table table-borderless table-sm align-middle mb-4">
+            <tbody>
+              <tr><td>Skanowanie A4 czarno-białe</td><td class="text-end">1,80 zł</td></tr>
+              <tr><td>Skanowanie A4 kolor</td><td class="text-end">2,00 zł</td></tr>
+              <tr><td>Skan A3 kolor</td><td class="text-end">4,00 zł</td></tr>
+            </tbody>
+          </table>
 
-<!-- Desktop tables -->
-<div class="d-none d-md-block">
+          <h4 class="mt-4 mb-3 text-uppercase fw-semibold">Oprawa i laminowanie</h4>
+          <table class="table table-borderless table-sm align-middle mb-4">
+            <tbody>
+              <tr><td>Bindowanie do 50 kartek</td><td class="text-end">12,00 zł</td></tr>
+              <tr><td>Oprawa twarda Metalbind</td><td class="text-end">35,00 zł</td></tr>
+              <tr><td>Laminowanie A4</td><td class="text-end">5,00 zł</td></tr>
+            </tbody>
+          </table>
 
-<h4 class="mt-4 mb-3 text-uppercase fw-semibold">Druk i ksero</h4>
-<table class="table table-borderless table-sm align-middle mb-4">
-<tbody>
-<tr><td>Ksero czarno-białe A4 – 1 strona</td><td class="text-end">1,20 zł</td></tr>
-<tr><td>Ksero czarno-białe A4 11–50 stron ADF</td><td class="text-end">1,00 zł</td></tr>
-<tr><td>Druk czarno-biały A4 – 1 strona</td><td class="text-end">1,70 zł</td></tr>
-<tr><td>Druk/ksero kolor A4 – 1 strona</td><td class="text-end">4,90 zł</td></tr>
-<tr><td>Druk/ksero kolor foto A3</td><td class="text-end">15,00 zł</td></tr>
-<tr><td>Wizytówki kolor 100 szt.</td><td class="text-end">79,00 zł</td></tr>
-</tbody>
-</table>
+          <h4 class="mt-4 mb-3 text-uppercase fw-semibold">Fotografia</h4>
+          <table class="table table-borderless table-sm align-middle mb-4">
+            <tbody>
+              <tr><td>Fotografia 10×15 cm – 1 szt.</td><td class="text-end">2,50 zł</td></tr>
+              <tr><td>Fotografia 20×30 cm / A4</td><td class="text-end">14,90 zł</td></tr>
+              <tr><td>Kalendarz A3 (13 stron)</td><td class="text-end">69,00 zł</td></tr>
+            </tbody>
+          </table>
 
-<h4 class="mt-4 mb-3 text-uppercase fw-semibold">Skanowanie</h4>
-<table class="table table-borderless table-sm align-middle mb-4">
-<tbody>
-<tr><td>Skanowanie A4 czarno-białe</td><td class="text-end">1,80 zł</td></tr>
-<tr><td>Skanowanie A4 kolor</td><td class="text-end">2,00 zł</td></tr>
-<tr><td>Skan A3 kolor</td><td class="text-end">4,00 zł</td></tr>
-</tbody>
-</table>
+          <!-- Przycisk rozwijania pełnego cennika -->
+          <div class="text-center my-4">
+            <button class="btn btn-dark px-4 py-2" id="toggleCennik" data-bs-toggle="collapse" data-bs-target="#pelnyCennik" aria-expanded="false" aria-controls="pelnyCennik">
+              Zobacz pełny cennik
+            </button>
+          </div>
 
-<h4 class="mt-4 mb-3 text-uppercase fw-semibold">Oprawa i laminowanie</h4>
-<table class="table table-borderless table-sm align-middle mb-4">
-<tbody>
-<tr><td>Bindowanie do 50 kartek</td><td class="text-end">12,00 zł</td></tr>
-<tr><td>Oprawa twarda Metalbind</td><td class="text-end">35,00 zł</td></tr>
-<tr><td>Laminowanie A4</td><td class="text-end">5,00 zł</td></tr>
-</tbody>
-</table>
-
-<h4 class="mt-4 mb-3 text-uppercase fw-semibold">Fotografia</h4>
-<table class="table table-borderless table-sm align-middle mb-4">
-<tbody>
-<tr><td>Fotografia 10×15 cm – 1 szt.</td><td class="text-end">2,50 zł</td></tr>
-<tr><td>Fotografia 20×30 cm / A4</td><td class="text-end">14,90 zł</td></tr>
-<tr><td>Kalendarz A3 (13 stron)</td><td class="text-end">69,00 zł</td></tr>
-</tbody>
-</table>
-
-<!-- PRZYCISK ROZWIJANIA -->
-<div class="text-center my-4">
-<button class="btn btn-dark px-4 py-2"
-        id="toggleCennik"
-        data-bs-toggle="collapse"
-        data-bs-target="#pelnyCennik"
-        aria-expanded="false"
-        aria-controls="pelnyCennik">
-Zobacz pełny cennik
-</button>
-</div>
-
-<!-- ROZWINIĘTY PEŁNY CENNIK -->
-<div class="collapse" id="pelnyCennik">
-<div class="card card-body shadow-sm">
-
-<h4 class="mb-4 text-uppercase fw-semibold text-center">Pełny cennik</h4>
-
-<div style="font-size:0.85rem;">
-
-<!-- KSERO I DRUK CZARNO-BIAŁY -->
-<h6 class="mt-3 mb-2 text-uppercase fw-bold text-muted">Ksero i druk czarno-biały</h6>
-<table class="table table-sm align-middle table-borderless mb-4">
-<tbody>
-<tr><td>Ksero czarno-białe A4 – 1 strona</td><td class="text-end">1,20 zł</td></tr>
-<tr><td>Ksero czarno-białe A4 (2–10 stron z szyby)</td><td class="text-end">1,10 zł</td></tr>
-<tr><td>Ksero czarno-białe A4 (11–50 stron ADF)</td><td class="text-end">1,00 zł</td></tr>
-<tr><td>Ksero czarno-białe A4 (51–100 stron ADF)</td><td class="text-end">0,90 zł</td></tr>
-<tr><td>Ksero czarno-białe A4 (101–500 stron ADF)</td><td class="text-end">0,80 zł</td></tr>
-<tr><td>Modyfikacje wielkości oryginału</td><td class="text-end">1,50 zł</td></tr>
-<tr><td>Ksero/druk czarno-biały o dużym zaczernieniu</td><td class="text-end">2,90 zł</td></tr>
-<tr><td>Ksero czarno-białe A3</td><td class="text-end">2,50 zł</td></tr>
-<tr><td>Druk czarno-biały A4 – 1 strona</td><td class="text-end">1,70 zł</td></tr>
-<tr><td>Druk czarno-biały A4 (2–10 stron)</td><td class="text-end">1,60 zł</td></tr>
-<tr><td>Druk czarno-biały A4 (11–50 stron)</td><td class="text-end">1,50 zł</td></tr>
-<tr><td>Druk czarno-biały A4 (51–100 stron)</td><td class="text-end">1,40 zł</td></tr>
-<tr><td>Druk czarno-biały A4 (101–200 stron)</td><td class="text-end">1,30 zł</td></tr>
-<tr><td>Druk czarno-biały A4 (201–500 stron)</td><td class="text-end">1,20 zł</td></tr>
-</tbody>
-</table>
-
-<!-- DRUK KOLOR -->
-<h6 class="mt-3 mb-2 text-uppercase fw-bold text-muted">Druk kolorowy</h6>
-<table class="table table-sm align-middle table-borderless mb-4">
-<tbody>
-<tr><td>Druk/ksero kolor A4 – 1 strona</td><td class="text-end">4,90 zł</td></tr>
-<tr><td>Druk/ksero kolor A4 od 2 stron</td><td class="text-end">4,40 zł</td></tr>
-<tr><td>Druk/ksero kolor A4 od 11 stron</td><td class="text-end">3,90 zł</td></tr>
-<tr><td>Druk/ksero kolor A4 od 21 stron</td><td class="text-end">3,50 zł</td></tr>
-<tr><td>Papier gruby / karton fakturowany</td><td class="text-end">9,30 zł</td></tr>
-<tr><td>Druk/ksero kolor foto A3 / SRA</td><td class="text-end">15,00 zł</td></tr>
-</tbody>
-</table>
-
-<!-- SKANOWANIE -->
-<h6 class="mt-3 mb-2 text-uppercase fw-bold text-muted">Skanowanie</h6>
-<table class="table table-sm align-middle table-borderless mb-4">
-<tbody>
-<tr><td>Skanowanie A4 czarno-białe</td><td class="text-end">1,80 zł</td></tr>
-<tr><td>Skanowanie A4 czarno-białe powyżej 10 stron</td><td class="text-end">1,50 zł</td></tr>
-<tr><td>Skanowanie A4 kolor</td><td class="text-end">2,00 zł</td></tr>
-<tr><td>Skanowanie A4 kolor foto</td><td class="text-end">5,00 zł</td></tr>
-<tr><td>Skan A3 czarno-biały</td><td class="text-end">3,60 zł</td></tr>
-<tr><td>Skan A3 kolor</td><td class="text-end">4,00 zł</td></tr>
-</tbody>
-</table>
-
-<!-- NOŚNIKI DANYCH -->
-<h6 class="mt-3 mb-2 text-uppercase fw-bold text-muted">Nośniki danych</h6>
-<table class="table table-sm align-middle table-borderless mb-4">
-<tbody>
-<tr><td>Wypalenie CD-R przy zleceniu</td><td class="text-end">7,00 zł</td></tr>
-<tr><td>Wypalenie CD-R</td><td class="text-end">9,90 zł</td></tr>
-<tr><td>Wypalenie DVD</td><td class="text-end">19,00 zł</td></tr>
-<tr><td>Dopłaty do papierów specjalnych</td><td class="text-end">1,40–4,40 zł</td></tr>
-</tbody>
-</table>
-
-<!-- WIZYTÓWKI I OPRAWA -->
-<h6 class="mt-3 mb-2 text-uppercase fw-bold text-muted">Wizytówki i oprawa</h6>
-<table class="table table-sm align-middle table-borderless mb-4">
-<tbody>
-<tr><td>Wizytówki czarno-białe 100 szt.</td><td class="text-end">59,00 zł</td></tr>
-<tr><td>Wizytówki kolor 100 szt.</td><td class="text-end">79,00 zł</td></tr>
-<tr><td>Bindowanie do 50 kartek</td><td class="text-end">12,00 zł</td></tr>
-<tr><td>Oprawa twarda Metalbind</td><td class="text-end">35,00 zł</td></tr>
-</tbody>
-</table>
-
-<!-- LAMINOWANIE -->
-<h6 class="mt-3 mb-2 text-uppercase fw-bold text-muted">Laminowanie</h6>
-<table class="table table-sm align-middle table-borderless mb-4">
-<tbody>
-<tr><td>Laminowanie A6–A3</td><td class="text-end">3,00–9,00 zł</td></tr>
-</tbody>
-</table>
-
-<!-- FOTOGRAFIA -->
-<h6 class="mt-3 mb-2 text-uppercase fw-bold text-muted">Fotografia</h6>
-<table class="table table-sm align-middle table-borderless mb-4">
-<tbody>
-<tr><td>Fotografia 10×15 do A4</td><td class="text-end">2,00–14,90 zł</td></tr>
-</tbody>
-</table>
-
-<!-- GRAFIKA I PLOTER -->
-<h6 class="mt-3 mb-2 text-uppercase fw-bold text-muted">Grafika i wydruki wielkoformatowe</h6>
-<table class="table table-sm align-middle table-borderless">
-<tbody>
-<tr><td>Grafika i ploter A3–A0</td><td class="text-end">30,00–66,00 zł</td></tr>
-<tr><td>Kalendarze i oprawy</td><td class="text-end">15,00–69,00 zł</td></tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-
-<p class="text-muted small mt-4 mb-0">
-Podane ceny są orientacyjne i nie stanowią oferty handlowej.<br>
-Aktualizacja: 01.02.2026
-</p>
-
-</div>
-
-</div>
-</div>
-</div>
+          <!-- Rozwijany pełny cennik -->
+          <div class="collapse" id="pelnyCennik">
+            <div class="card card-body shadow-sm">
+              <h4 class="mb-4 text-uppercase fw-semibold text-center">Pełny cennik</h4>
+              <div style="font-size:0.85rem;">
+                <!-- Ksero i druk czarno-biały -->
+                <h6 class="mt-3 mb-2 text-uppercase fw-bold text-muted">Ksero i druk czarno-biały</h6>
+                <table class="table table-sm align-middle table-borderless mb-4">
+                  <tbody>
+                    <tr><td>Ksero czarno-białe A4 – 1 strona</td><td class="text-end">1,20 zł</td></tr>
+                    <tr><td>Ksero czarno-białe A4 (2–10 stron z szyby)</td><td class="text-end">1,10 zł</td></tr>
+                    <tr><td>Ksero czarno-białe A4 (11–50 stron ADF)</td><td class="text-end">1,00 zł</td></tr>
+                    <tr><td>Ksero czarno-białe A4 (51–100 stron ADF)</td><td class="text-end">0,90 zł</td></tr>
+                    <tr><td>Ksero czarno-białe A4 (101–500 stron ADF)</td><td class="text-end">0,80 zł</td></tr>
+                    <tr><td>Modyfikacje wielkości oryginału</td><td class="text-end">1,50 zł</td></tr>
+                    <tr><td>Ksero/druk czarno-biały o dużym zaczernieniu</td><td class="text-end">2,90 zł</td></tr>
+                    <tr><td>Ksero czarno-białe A3</td><td class="text-end">2,50 zł</td></tr>
+                    <tr><td>Druk czarno-biały A4 – 1 strona</td><td class="text-end">1,70 zł</td></tr>
+                    <tr><td>Druk czarno-biały A4 (2–10 stron)</td><td class="text-end">1,60 zł</td></tr>
+                    <tr><td>Druk czarno-biały A4 (11–50 stron)</td><td class="text-end">1,50 zł</td></tr>
+                    <tr><td>Druk czarno-biały A4 (51–100 stron)</td><td class="text-end">1,40 zł</td></tr>
+                    <tr><td>Druk czarno-biały A4 (101–200 stron)</td><td class="text-end">1,30 zł</td></tr>
+                    <tr><td>Druk czarno-biały A4 (201–500 stron)</td><td class="text-end">1,20 zł</td></tr>
+                  </tbody>
+                </table>
+                <!-- Druk kolorowy -->
+                <h6 class="mt-3 mb-2 text-uppercase fw-bold text-muted">Druk kolorowy</h6>
+                <table class="table table-sm align-middle table-borderless mb-4">
+                  <tbody>
+                    <tr><td>Druk/ksero kolor A4 – 1 strona</td><td class="text-end">4,90 zł</td></tr>
+                    <tr><td>Druk/ksero kolor A4 od 2 stron</td><td class="text-end">4,40 zł</td></tr>
+                    <tr><td>Druk/ksero kolor A4 od 11 stron</td><td class="text-end">3,90 zł</td></tr>
+                    <tr><td>Druk/ksero kolor A4 od 21 stron</td><td class="text-end">3,50 zł</td></tr>
+                    <tr><td>Papier gruby / karton fakturowany</td><td class="text-end">9,30 zł</td></tr>
+                    <tr><td>Druk/ksero kolor foto A3 / SRA</td><td class="text-end">15,00 zł</td></tr>
+                  </tbody>
+                </table>
+                <!-- Skanowanie -->
+                <h6 class="mt-3 mb-2 text-uppercase fw-bold text-muted">Skanowanie</h6>
+                <table class="table table-sm align-middle table-borderless mb-4">
+                  <tbody>
+                    <tr><td>Skanowanie A4 czarno-białe</td><td class="text-end">1,80 zł</td></tr>
+                    <tr><td>Skanowanie A4 czarno-białe powyżej 10 stron</td><td class="text-end">1,50 zł</td></tr>
+                    <tr><td>Skanowanie A4 kolor</td><td class="text-end">2,00 zł</td></tr>
+                    <tr><td>Skanowanie A4 kolor foto</td><td class="text-end">5,00 zł</td></tr>
+                    <tr><td>Skan A3 czarno-biały</td><td class="text-end">3,60 zł</td></tr>
+                    <tr><td>Skan A3 kolor</td><td class="text-end">4,00 zł</td></tr>
+                  </tbody>
+                </table>
+                <!-- Nośniki danych -->
+                <h6 class="mt-3 mb-2 text-uppercase fw-bold text-muted">Nośniki danych</h6>
+                <table class="table table-sm align-middle table-borderless mb-4">
+                  <tbody>
+                    <tr><td>Wypalenie CD-R przy zleceniu</td><td class="text-end">7,00 zł</td></tr>
+                    <tr><td>Wypalenie CD-R</td><td class="text-end">9,90 zł</td></tr>
+                    <tr><td>Wypalenie DVD</td><td class="text-end">19,00 zł</td></tr>
+                    <tr><td>Dopłaty do papierów specjalnych</td><td class="text-end">1,40–4,40 zł</td></tr>
+                  </tbody>
+                </table>
+                <!-- Wizytówki i oprawa -->
+                <h6 class="mt-3 mb-2 text-uppercase fw-bold text-muted">Wizytówki i oprawa</h6>
+                <table class="table table-sm align-middle table-borderless mb-4">
+                  <tbody>
+                    <tr><td>Wizytówki czarno-białe 100 szt.</td><td class="text-end">59,00 zł</td></tr>
+                    <tr><td>Wizytówki kolor 100 szt.</td><td class="text-end">79,00 zł</td></tr>
+                    <tr><td>Bindowanie do 50 kartek</td><td class="text-end">12,00 zł</td></tr>
+                    <tr><td>Oprawa twarda Metalbind</td><td class="text-end">35,00 zł</td></tr>
+                  </tbody>
+                </table>
+                <!-- Laminowanie -->
+                <h6 class="mt-3 mb-2 text-uppercase fw-bold text-muted">Laminowanie</h6>
+                <table class="table table-sm align-middle table-borderless mb-4">
+                  <tbody>
+                    <tr><td>Laminowanie A6–A3</td><td class="text-end">3,00–9,00 zł</td></tr>
+                  </tbody>
+                </table>
+                <!-- Fotografia -->
+                <h6 class="mt-3 mb-2 text-uppercase fw-bold text-muted">Fotografia</h6>
+                <table class="table table-sm align-middle table-borderless mb-4">
+                  <tbody>
+                    <tr><td>Fotografia 10×15 do A4</td><td class="text-end">2,00–14,90 zł</td></tr>
+                  </tbody>
+                </table>
+                <!-- Grafika i ploter -->
+                <h6 class="mt-3 mb-2 text-uppercase fw-bold text-muted">Grafika i wydruki wielkoformatowe</h6>
+                <table class="table table-sm align-middle table-borderless">
+                  <tbody>
+                    <tr><td>Grafika i ploter A3–A0</td><td class="text-end">30,00–66,00 zł</td></tr>
+                    <tr><td>Kalendarze i oprawy</td><td class="text-end">15,00–69,00 zł</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <p class="text-muted small mt-4 mb-0">
+            Podane ceny są orientacyjne i nie stanowią oferty handlowej.<br>
+            Aktualizacja: 01.02.2026
+          </p>
+        </div> <!-- .d-none.d-md-block -->
+      </div> <!-- .col-lg-8 -->
+    </div> <!-- .row -->
+  </div> <!-- .container -->
 </section>
-    
-<!-- PRZEŚLIJ PLIK DO WYDRUKU -->
+
+<!-- ===== PRZEŚLIJ PLIK DO WYDRUKU (SECTION UPLOAD) ===== -->
 <section id="upload" class="py-5" style="background-color: #ffffff;">
   <div class="container">
     <h2 class="text-center mb-4 fw-bold" style="letter-spacing: 0.5px;">Prześlij plik do wydruku</h2>
-      <p class="text-center text-muted mb-5">
-  Wypełnij formularz i dołącz pliki, które chcesz wydrukować. Skontaktujemy się z Tobą w celu potwierdzenia zamówienia.<br>
-  Możesz również skorzystać z naszej poczty e-mail: <a href="mailto:druk@plikdruk.pl">druk@plikdruk.pl</a>
-      </p>
+    <p class="text-center text-muted mb-5">
+      Wypełnij formularz i dołącz pliki, które chcesz wydrukować. Skontaktujemy się z Tobą w celu potwierdzenia zamówienia.<br>
+      Możesz również skorzystać z naszej poczty e-mail: <a href="mailto:druk@plikdruk.pl">druk@plikdruk.pl</a>
+    </p>
     <div class="row justify-content-center">
       <div class="col-lg-6">
-
         <form id="uploadForm" class="p-4 shadow-sm rounded" style="background-color: #fefefe;" action="send-mail.php" method="post" enctype="multipart/form-data">
-
-  <!-- Imię i nazwisko -->
-  <div class="mb-3">
-    <label for="name" class="form-label fw-semibold">Imię i nazwisko</label>
-    <input type="text" class="form-control shadow-sm rounded" id="name" name="name" placeholder="Jan Kowalski" required>
-  </div>
-
-  <!-- E-mail -->
-  <div class="mb-3">
-    <label for="email" class="form-label fw-semibold">E-mail</label>
-    <input type="email" class="form-control shadow-sm rounded" id="email" name="email" placeholder="jan.kowalski@example.com" required>
-  </div>
-
-  <!-- Numer telefonu -->
-  <div class="mb-3">
-    <label for="phone" class="form-label fw-semibold">Numer telefonu</label>
-    <input type="tel" class="form-control shadow-sm rounded" id="phone" name="phone" placeholder="500 123 456">
-  </div>
-
-  <!-- Opis zlecenia -->
-  <div class="mb-3">
-    <label for="description" class="form-label fw-semibold">Opis zlecenia</label>
-    <textarea class="form-control shadow-sm rounded" id="description" name="description" rows="4" placeholder="Napisz czego dotyczy zlecenie"></textarea>
-  </div>
-
-  <!-- Załączniki -->
-  <div class="mb-3">
-    <label for="files" class="form-label fw-semibold">Załącz pliki</label>
-    <input class="form-control shadow-sm rounded" type="file" id="files" name="files[]" multiple>
-  </div>
-
-  <!-- Zgoda na przetwarzanie danych -->
-  <div class="form-check mb-3">
-    <input class="form-check-input" type="checkbox" value="1" id="consent" name="consent" required>
-    <label class="form-check-label small" for="consent">
-      Wyrażam zgodę na przetwarzanie moich danych osobowych w celu realizacji zamówienia.
-    </label>
-  </div>
-
-  <!-- reCaptcha placeholder -->
-<div class="mb-4">
-  <div class="g-recaptcha" data-sitekey="6LegDXoUAAAAABQ4ROjuCBLS_s-4cI2n5lmI0Ka4"></div>
-</div>
-
-  <!-- Przycisk wysyłania -->
-  <div class="d-grid">
-    <button type="submit" class="btn btn-primary btn-lg fw-semibold"
-      style="transition: transform 0.2s ease, box-shadow 0.2s ease;">
-      Wyślij
-    </button>
-  </div>
-           
-<!-- Pop-up potwierdzenia / błędu -->
-<div id="uploadModal" class="position-fixed top-50 start-50 translate-middle p-4 rounded shadow d-none" 
-     style="z-index: 1050; min-width: 300px; max-width: 90%; text-align:center; color:#fff;">
-  <strong id="uploadModalText">Wiadomość wysłana pomyślnie!</strong>
-</div>
-
-
-</form>
-
+          <!-- Imię i nazwisko -->
+          <div class="mb-3">
+            <label for="name" class="form-label fw-semibold">Imię i nazwisko</label>
+            <input type="text" class="form-control shadow-sm rounded" id="name" name="name" placeholder="Jan Kowalski" required>
+          </div>
+          <!-- E-mail -->
+          <div class="mb-3">
+            <label for="email" class="form-label fw-semibold">E-mail</label>
+            <input type="email" class="form-control shadow-sm rounded" id="email" name="email" placeholder="jan.kowalski@example.com" required>
+          </div>
+          <!-- Numer telefonu -->
+          <div class="mb-3">
+            <label for="phone" class="form-label fw-semibold">Numer telefonu</label>
+            <input type="tel" class="form-control shadow-sm rounded" id="phone" name="phone" placeholder="500 123 456">
+          </div>
+          <!-- Opis zlecenia -->
+          <div class="mb-3">
+            <label for="description" class="form-label fw-semibold">Opis zlecenia</label>
+            <textarea class="form-control shadow-sm rounded" id="description" name="description" rows="4" placeholder="Napisz czego dotyczy zlecenie"></textarea>
+          </div>
+          <!-- Załączniki -->
+          <div class="mb-3">
+            <label for="files" class="form-label fw-semibold">Załącz pliki</label>
+            <input class="form-control shadow-sm rounded" type="file" id="files" name="files[]" multiple>
+          </div>
+          <!-- Zgoda na przetwarzanie danych -->
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="1" id="consent" name="consent" required>
+            <label class="form-check-label small" for="consent">
+              Wyrażam zgodę na przetwarzanie moich danych osobowych w celu realizacji zamówienia.
+            </label>
+          </div>
+          <!-- reCaptcha -->
+          <div class="mb-4">
+            <div class="g-recaptcha" data-sitekey="6LegDXoUAAAAABQ4ROjuCBLS_s-4cI2n5lmI0Ka4"></div>
+          </div>
+          <!-- Przycisk wysyłania -->
+          <div class="d-grid">
+            <button type="submit" class="btn btn-primary btn-lg fw-semibold" style="transition: transform 0.2s ease, box-shadow 0.2s ease;">
+              Wyślij
+            </button>
+          </div>
+          <!-- Pop-up potwierdzenia / błędu -->
+          <div id="uploadModal" class="position-fixed top-50 start-50 translate-middle p-4 rounded shadow d-none" style="z-index: 1050; min-width: 300px; max-width: 90%; text-align:center; color:#fff;">
+            <strong id="uploadModalText">Wiadomość wysłana pomyślnie!</strong>
+          </div>
+        </form>
       </div>
     </div>
   </div>
 </section>
 
-
-<!-- KONTAKT -->
+<!-- ===== KONTAKT (SECTION CONTACT) ===== -->
 <section id="contact" class="py-5" style="background-color: #f8f9fa;">
   <div class="container">
     <h2 class="text-center mb-4">Kontakt</h2>
     <div class="row align-items-center">
-
       <!-- Dane kontaktowe -->
       <div class="col-md-6 order-2 order-md-1">
-        <p><i class="fa-solid fa-building"></i> Adres: <strong> CHR GALAXY (parter)</strong></p>
+        <p><i class="fa-solid fa-building"></i> Adres: <strong>CHR GALAXY (parter)</strong></p>
         <p><i class="fa-solid fa-phone"></i> Telefon: 91 489 55 40</p>
         <p><i class="fa-solid fa-envelope"></i> E-mail: <a href="mailto:druk@plikdruk.pl">druk@plikdruk.pl</a></p>
         <p><i class="fa-solid fa-globe"></i> Strona: <a href="https://www.plikdruk.pl">www.plikdruk.pl</a></p>
         <p><img src="plikdruk.webp" alt="Mapa Plikdruk.pl" width="560" height="272" class="img-fluid rounded"></p>
       </div>
-
       <!-- Mapa Google -->
       <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0 text-center">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9507.725338281718!2d14.555565!3d53.433936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7753de96a92e23ab!2sGalaxy+Centrum!5e0!3m2!1spl!2spl!4v1456237309213"
-          width="100%" height="430" style="border:0;" allowfullscreen="" loading="lazy" decoding="async" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9507.725338281718!2d14.555565!3d53.433936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7753de96a92e23ab!2sGalaxy+Centrum!5e0!3m2!1spl!2spl!4v1456237309213" width="100%" height="430" style="border:0;" allowfullscreen="" loading="lazy" decoding="async" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-
     </div>
   </div>
 </section>
 
-    
-<!-- FOOTER -->
+<!-- ===== FOOTER ===== -->
 <footer class="bg-dark text-white text-center py-3 mt-5">
-© 2026 plikdruk.pl | Wszelkie prawa zastrzeżone.
-<br>
-<a href="javascript:void(0)" onclick="openCookiePopup()" style="color:#ccc;text-decoration:underline;">
-  Polityka prywatności i cookies
-</a>
+  <div class="copyright-text">© 2026 plikdruk.pl | Wszelkie prawa zastrzeżone.</div>
+  <a href="javascript:void(0)" onclick="openCookiePopup()" class="btn btn-outline-dark px-3 py-1" style="font-size: 0.9rem; line-height: 1.2;">
+    Polityka prywatności i cookies
+  </a>
 </footer>
 
+<!-- ===== COOKIE POPUP ===== -->
 <div id="cookiePopup">
-<div class="popup-content">
-<span class="close-btn" onclick="closeCookiePopup()">&times;</span>
-<h4>Polityka cookies</h4>
-<p>Używamy plików Cookies, aby usprawnić działanie serwisu i zapamiętać Twoje ustawienia. Pliki te nie zawierają danych osobowych i są bezpieczne.</p>
-<p>Możesz w każdej chwili zmienić ustawienia swojej przeglądarki i usunąć zapisane pliki Cookies. Wyłączenie Cookies może wpłynąć na działanie niektórych funkcji serwisu.</p>
-<p>Korzystając z serwisu, wyrażasz zgodę na używanie plików Cookies zgodnie z tą polityką.</p>
-<button class="btn btn-primary" onclick="closeCookiePopup()">Zamknij</button>
-</div>
+  <div class="popup-content">
+    <span class="close-btn" onclick="closeCookiePopup()">&times;</span>
+    <h4>Polityka cookies</h4>
+    <p>Używamy plików Cookies, aby usprawnić działanie serwisu i zapamiętać Twoje ustawienia. Pliki te nie zawierają danych osobowych i są bezpieczne.</p>
+    <p>Możesz w każdej chwili zmienić ustawienia swojej przeglądarki i usunąć zapisane pliki Cookies. Wyłączenie Cookies może wpłynąć na działanie niektórych funkcji serwisu.</p>
+    <p>Korzystając z serwisu, wyrażasz zgodę na używanie plików Cookies zgodnie z tą polityką.</p>
+    <button class="btn btn-primary" onclick="closeCookiePopup()">Zamknij</button>
+  </div>
 </div>
 
+<!-- ===== SCRIPTS (deferred) ===== -->
 <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script defer src="https://www.google.com/recaptcha/api.js"></script>
 
+<!-- ===== CUSTOM JAVASCRIPT ===== -->
 <script>
-document.addEventListener("DOMContentLoaded", function(){
+  document.addEventListener("DOMContentLoaded", function() {
+    // ===== INICJALIZACJA AOS =====
+    AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
 
-  // ===== AOS =====
-  AOS.init({duration: 800, easing: 'ease-in-out', once: true});
+    // ===== AUTOMATYCZNE ZAMYKANIE MENU MOBILNEGO =====
+    const navbarCollapse = document.getElementById('navbarNav');
+    const navLinks = navbarCollapse ? navbarCollapse.querySelectorAll('.nav-link') : [];
+    const navbarToggler = document.querySelector('.navbar-toggler');
 
-  // ===== AUTOMATYCZNE ZAMYKANIE MENU MOBILNEGO =====
-  const navbarCollapse = document.getElementById('navbarNav');
-  const navLinks = navbarCollapse ? navbarCollapse.querySelectorAll('.nav-link') : [];
-  const navbarToggler = document.querySelector('.navbar-toggler');
+    if (navbarCollapse) {
+      const bsCollapse = bootstrap.Collapse.getOrCreateInstance(navbarCollapse, { toggle: false });
 
-  if(navbarCollapse){
-    const bsCollapse = bootstrap.Collapse.getOrCreateInstance(navbarCollapse, { toggle: false });
+      // Kliknięcie w link zamyka menu
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          if (navbarCollapse.classList.contains('show')) {
+            bsCollapse.hide();
+          }
+        });
+      });
 
-    // Kliknięcie w link zamyka menu
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        if(navbarCollapse.classList.contains('show')){
+      // Kliknięcie poza navbar zamyka menu
+      document.addEventListener('click', function(e) {
+        if (navbarCollapse.contains(e.target) || (navbarToggler && navbarToggler.contains(e.target))) return;
+        if (navbarCollapse.classList.contains('show')) {
           bsCollapse.hide();
         }
       });
+    }
+
+    // ===== ANIMACJA PODKREŚLENIA NAGŁÓWKA =====
+    const h1 = document.querySelector('#home h1');
+    if (h1) {
+      setTimeout(() => h1.classList.add('loaded'), 100);
+    }
+
+    // ===== ZMIANA TEKSTU PRZYCISKU CENNIKA =====
+    const btn = document.getElementById("toggleCennik");
+    const collapse = document.getElementById("pelnyCennik");
+    if (btn && collapse) {
+      collapse.addEventListener("show.bs.collapse", () => btn.textContent = "Zwiń pełny cennik");
+      collapse.addEventListener("hide.bs.collapse", () => btn.textContent = "Zobacz pełny cennik");
+    }
+
+    // ===== OBSŁUGA FORMULARZA AJAX Z WALIDACJĄ RECAPTCHA =====
+    const form = document.getElementById('uploadForm');
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Sprawdzenie reCAPTCHA
+        const recaptchaResponse = grecaptcha.getResponse();
+        if (recaptchaResponse.length === 0) {
+          alert("Proszę potwierdzić, że nie jesteś robotem (reCAPTCHA).");
+          return;
+        }
+
+        const formData = new FormData(form);
+        formData.append('g-recaptcha-response', recaptchaResponse);
+
+        fetch('send-mail.php', { method: 'POST', body: formData })
+          .then(r => r.text())
+          .then(result => {
+            const modal = document.getElementById("uploadModal");
+            const modalText = document.getElementById("uploadModalText");
+
+            if (result.trim() === 'success') {
+              modal.style.background = "#28a745";
+              modalText.textContent = "Wiadomość została wysłana pomyślnie!";
+              form.reset();
+              grecaptcha.reset(); // reset reCAPTCHA
+            } else {
+              modal.style.background = "#dc3545";
+              modalText.textContent = "Wystąpił błąd. Spróbuj ponownie.";
+            }
+
+            modal.classList.remove("d-none");
+            setTimeout(() => modal.classList.add("d-none"), 3000);
+          })
+          .catch(err => alert("Wystąpił błąd sieci. Spróbuj ponownie."));
+      });
+    }
+    
+    // ===== DODATKOWY EFEKT DLA SEKCJI PRZY PRZEWIJANIU =====
+    const sections = document.querySelectorAll('section');
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const sectionObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+    
+    sections.forEach(section => {
+      section.style.opacity = '0.8';
+      section.style.transform = 'translateY(20px)';
+      sectionObserver.observe(section);
     });
+  });
 
-    // Kliknięcie poza navbar zamyka menu
-    document.addEventListener('click', function(e){
-      if(navbarCollapse.contains(e.target) || (navbarToggler && navbarToggler.contains(e.target))) return;
-      if(navbarCollapse.classList.contains('show')){
-        bsCollapse.hide();
-      }
-    });
+  // ===== FUNKCJE OBSŁUGI COOKIE POPUP =====
+  function openCookiePopup() {
+    const popup = document.getElementById('cookiePopup');
+    if (popup) popup.style.display = 'block';
   }
-
-  // ===== ANIMACJA PODKREŚLENIA =====
-  const h1 = document.querySelector('#home h1');
-  if(h1){
-    setTimeout(()=> h1.classList.add('loaded'), 100);
+  
+  function closeCookiePopup() {
+    const popup = document.getElementById('cookiePopup');
+    if (popup) popup.style.display = 'none';
   }
-
-  // ===== ZMIANA TEKSTU PRZYCISKU CENNIKA =====
-  const btn = document.getElementById("toggleCennik");
-  const collapse = document.getElementById("pelnyCennik");
-
-  if(btn && collapse){
-    collapse.addEventListener("show.bs.collapse", ()=> btn.textContent = "Zwiń pełny cennik");
-    collapse.addEventListener("hide.bs.collapse", ()=> btn.textContent = "Zobacz pełny cennik");
+  
+  // Zamknięcie popupu klikając poza jego treść
+  window.onclick = function(event) {
+    const popup = document.getElementById('cookiePopup');
+    if (event.target === popup) {
+      popup.style.display = 'none';
+    }
   }
-
-  // ===== Formularz AJAX z walidacją reCAPTCHA =====
-  const form = document.getElementById('uploadForm');
-  if(form){
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-
-      // Sprawdzenie reCAPTCHA
-      const recaptchaResponse = grecaptcha.getResponse();
-      if(recaptchaResponse.length === 0){
-        alert("Proszę potwierdzić, że nie jesteś robotem (reCAPTCHA).");
-        return; // przerwij wysyłkę
-      }
-
-      const formData = new FormData(form);
-      formData.append('g-recaptcha-response', recaptchaResponse);
-
-      fetch('send-mail.php', { method:'POST', body: formData })
-        .then(r => r.text())
-        .then(result => {
-          const modal = document.getElementById("uploadModal");
-          const modalText = document.getElementById("uploadModalText");
-
-          if(result.trim() === 'success'){
-            modal.style.background = "#28a745";
-            modalText.textContent = "Wiadomość została wysłana pomyślnie!";
-            form.reset();
-            grecaptcha.reset(); // reset reCAPTCHA
-          } else {
-            modal.style.background = "#dc3545";
-            modalText.textContent = "Wystąpił błąd. Spróbuj ponownie.";
-          }
-
-          modal.classList.remove("d-none");
-          setTimeout(()=> modal.classList.add("d-none"), 3000);
-        })
-        .catch(err => alert("Wystąpił błąd sieci. Spróbuj ponownie."));
-    });
-  }
-
-});
-
-
-// ===== COOKIES =====
-function openCookiePopup(){
-  const popup = document.getElementById('cookiePopup');
-  if(popup) popup.style.display = 'block';
-}
-function closeCookiePopup(){
-  const popup = document.getElementById('cookiePopup');
-  if(popup) popup.style.display = 'none';
-}
 </script>
-
-
-
 </body>
 </html>
