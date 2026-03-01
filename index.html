@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Dodane meta tagi dla optymalizacji -->
   <meta name="theme-color" content="#212529">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -29,411 +28,29 @@
   ">
 
   <!-- ===== FAVICONS & WEB APP MANIFEST ===== -->
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
 
   <!-- ===== STYLESHEETS (CSS) ===== -->
   <!-- Preconnect & Preload dla optymalizacji -->
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" as="style">
+  
   <!-- Biblioteki zewnętrzne -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" rel="stylesheet">
-
-  <!-- ===== CSS ===== -->
-  <style>
-    /* Płynne przewijanie */
-    html {
-      scroll-behavior: smooth;
-    }
-    
-    body { 
-      scroll-behavior: smooth; 
-      overflow-x: hidden;
-    }
-
-    /* Płynne przejścia między sekcjami - efekt fade i przesunięcie */
-    section {
-      opacity: 1;
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-    
-    /* Dodatkowy efekt dla sekcji pojawiających się podczas przewijania */
-    section:not(#home) {
-      animation: fadeInUp 0.8s ease-out;
-    }
-    
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* Navbar */
-    .navbar-brand { transition: 0.3s; }
-    .navbar-brand:hover { transform: scale(1.05); color: #00c8ff; }
-    section[id] { scroll-margin-top: 40px; }
-
-    /* Animacja podkreślenia dla linków w navbar - rozciąganie od środka */
-    .navbar-nav .nav-link {
-      position: relative;
-      padding-bottom: 5px;
-      color: rgba(255, 255, 255, 0.8);
-      transition: color 0.3s ease;
-      text-align: center;
-    }
-      
-    .navbar-nav .nav-link:hover {
-      color: #ffffff;
-    }
-
-    .navbar-nav .nav-link::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      width: 0;
-      height: 2px;
-      background: #0d6efd;
-      transition: width 0.3s ease;
-      transform: translateX(-50%);
-    }
-
-    .navbar-nav .nav-link:hover::after {
-      width: 80%;
-    }
-
-    .navbar-nav .nav-link.active::after {
-      width: 80%;
-      background: #0d6efd;
-    }
-    
-    /* Wycentrowanie menu w wersji mobilnej */
-    @media (max-width: 991.98px) {
-      .navbar-collapse {
-        text-align: center;
-      }
-      
-      .navbar-nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-      }
-      
-      .navbar-nav .nav-item {
-        width: 100%;
-        text-align: center;
-        margin: 5px 0;
-      }
-      
-      .navbar-nav .nav-link {
-        display: inline-block;
-        padding: 10px 0;
-      }
-      
-      .navbar-nav .nav-link::after {
-        left: 50%;
-        transform: translateX(-50%);
-      }
-    }
-      
-    /* Animacja podkreślenia nagłówka */
-    .animated-underline {
-      display: block;
-      height: 6px;
-      width: 0;
-      background: #dc3545;
-      border-radius: 3px;
-      position: absolute;
-      bottom: -10px;
-      left: 0;
-      transition: width 1s ease;
-    }
-    #home h1.loaded .animated-underline { width: 100%; }
-
-    /* Oferta – ikony */
-    #about i { transition: 0.3s; }
-    #about i:hover { transform: scale(1.15); }
-
-    /* Cennik – tabele i nagłówki */
-    #services table { background: #f8f9fa; border-radius: 8px; }
-    #services h4::after {
-      content: '';
-      display: block;
-      width: 60px;
-      height: 2px;
-      background: #0d6efd;
-      margin-top: 4px;
-      transition: 0.3s;
-    }
-    #services h4:hover::after { width: 100px; }
-
-    /* Formularz przesyłania plików */
-    #upload .form-control:focus {
-      border-color: #0d6efd;
-      box-shadow: 0 0 8px rgba(13, 110, 253, 0.2);
-    }
-    #upload .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
-    }
-
-    /* Okno cookie (popup) */
-    #cookiePopup {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.5);
-      z-index: 9999;
-      animation: fadeIn 0.4s ease;
-    }
-    
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    
-    #cookiePopup .popup-content {
-      background: #fff;
-      padding: 30px;
-      max-width: 600px;
-      margin: 100px auto;
-      border-radius: 8px;
-      position: relative;
-      animation: slideDown 0.4s ease;
-    }
-    
-    @keyframes slideDown {
-      from {
-        opacity: 0;
-        transform: translateY(-50px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    
-    .close-btn {
-      position: absolute;
-      top: 10px;
-      right: 15px;
-      cursor: pointer;
-      font-size: 24px;
-      transition: transform 0.2s ease;
-    }
-    
-    .close-btn:hover {
-      transform: scale(1.2);
-      color: #dc3545;
-    }
-
-    /* Dodatkowe efekty formularza */
-    #upload .form-control {
-      border: 1px solid #dee2e6;
-      transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
-    }
-    
-    #upload .form-control:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    }
-    
-    /* Efekt ripple dla przycisku w popup cookie */
-    #cookiePopup .btn-primary {
-      position: relative;
-      overflow: hidden;
-      transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-    }
-    
-    #cookiePopup .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 16px rgba(13, 110, 253, 0.4);
-    }
-    
-    #cookiePopup .btn-primary:active {
-      transform: translateY(0);
-    }
-    
-    #cookiePopup .btn-primary::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 5px;
-      height: 5px;
-      background: rgba(255, 255, 255, 0.7);
-      opacity: 0;
-      border-radius: 100%;
-      transform: scale(1, 1) translate(-50%);
-      transform-origin: 50% 50%;
-    }
-    
-    #cookiePopup .btn-primary:focus:not(:active)::after {
-      animation: ripple 0.6s ease-out;
-    }
-    
-    @keyframes ripple {
-      0% {
-        transform: scale(0, 0) translate(-50%, -50%);
-        opacity: 0.5;
-      }
-      100% {
-        transform: scale(20, 20) translate(-50%, -50%);
-        opacity: 0;
-      }
-    }
-    
-    /* Dodatkowe efekty dla kart w ofercie */
-    #about .col-md-6, #about li {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    
-    #about .col-md-6:hover {
-      transform: translateY(-5px);
-    }
-    
-    #about li:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    }
-    
-    /* Efekt dla przycisków w cenniku */
-    #services .btn-outline-dark,
-    footer .btn-outline-dark {
-      transition: all 0.3s ease;
-      border-width: 2px;
-      font-weight: 500;
-      background-color: transparent;
-      color: #ccc;  /* kolor dla polityki cookie (jasnoszary) */
-      border-color: #6c757d;
-      text-decoration: none;
-    }
-    
-    /* Osobny styl tylko dla przycisku Pobierz pełny cennik PDF */
-    #services .btn-outline-dark {
-      color: #212529;  /* czarny kolor tylko dla cennika */
-    }
-    
-    #services .btn-outline-dark:hover,
-    footer .btn-outline-dark:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
-      background-color: #343a40;
-      border-color: #343a40;
-      color: #fff;
-    }
-    
-    #services .btn-outline-dark:active,
-    footer .btn-outline-dark:active {
-      transform: translateY(-1px);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    
-    #toggleCennik {
-      transition: all 0.3s ease;
-    }
-    
-    #toggleCennik:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
-    }
-    
-    /* Animacja dla tabel w cenniku */
-    #services table {
-      transition: opacity 0.5s ease, transform 0.5s ease;
-    }
-    
-    /* Płynne pojawianie się rozwijanego cennika */
-    #pelnyCennik.collapsing {
-      transition: all 0.5s ease;
-    }
-    
-    #pelnyCennik .card {
-      animation: fadeScale 0.5s ease;
-    }
-    
-    @keyframes fadeScale {
-      from {
-        opacity: 0;
-        transform: scale(0.95);
-      }
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-    
-    /* linki w Kontakt */
-    .contact-link {
-      color: #0d6efd;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      font-weight: 400;
-    }
-
-    .contact-link:hover {
-      color: #003d80;
-      font-weight: 700;
-      text-decoration: none;
-    }
-      
-    /* Efekt dla mapy */
-    iframe {
-      transition: opacity 0.5s ease, box-shadow 0.3s ease;
-      border-radius: 8px;
-    }
-    
-    iframe:hover {
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    }
-    
-    /* Animacja dla stopki */
-    footer {
-      position: relative;
-      overflow: hidden;
-    }
-    
-    footer::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, #fff, transparent);
-      animation: shimmer 3s infinite;
-    }
-    
-    @keyframes shimmer {
-      0% { left: -100%; }
-      100% { left: 100%; }
-    }
-      
-    .copyright-text {
-       margin-bottom: 10px;
-    }
-      
-    /* Usunięcie domyślnych stylów dla linków w footerze */
-    footer a {
-      text-decoration: none;
-    }
-    </style>
+  
+  <!-- Główny arkusz stylów -->
+  <link rel="stylesheet" href="style.css">
 
   <!-- ===== SCHEMA.ORG (DANE STRUKTURALNE) ===== -->
   <script type="application/ld+json">
@@ -502,7 +119,7 @@
     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
       <i class="fa-solid fa-stamp mb-3 fa-3x text-primary"></i>
       <h5 class="fw-semibold">STEMPLE</h5>
-      <p class="small text-muted">Realizacja w 24h (dni robocze). Sprzedaż i produkcja wszelkich pieczątek. Automaty firmy <a href="https://colop.pl/" class="contact-link">COLOP</a>.</p>
+      <p class="small text-muted">Realizacja w 24h (dni robocze). Sprzedaż i produkcja wszelkich pieczątek. Automaty firmy <a href="https://colop.pl/" class="contact-link">COLOP.</a></p>
     </div>
     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
       <i class="fa-solid fa-camera mb-3 fa-3x text-primary"></i>
@@ -556,7 +173,7 @@
       <i class="fa-solid fa-stamp fa-2x me-3 text-primary"></i>
       <div>
         <h5 class="fw-semibold mb-1">STEMPLE</h5>
-        <p class="small text-muted mb-0">Realizacja w 24h (dni robocze). Sprzedaż i produkcja wszelkich pieczątek. Automaty firmy <a href="https://colop.pl/" class="contact-link">COLOP</a>.</p>
+        <p class="small text-muted mb-0">Realizacja w 24h (dni robocze). Sprzedaż i produkcja wszelkich pieczątek. Automaty firmy <a href="https://colop.pl/" class="contact-link">COLOP.</a></p>
       </div>
     </li>
     <li class="mb-4 p-3 shadow-sm rounded d-flex align-items-start">
@@ -774,7 +391,7 @@
     <h2 class="text-center mb-4 fw-bold" style="letter-spacing: 0.5px;">Prześlij plik do wydruku</h2>
     <p class="text-center text-muted mb-5">
       Wypełnij formularz i dołącz pliki, które chcesz wydrukować. Skontaktujemy się z Tobą w celu potwierdzenia zamówienia.<br>
-      Możesz również skorzystać z naszej poczty e-mail: <a href="mailto:druk@plikdruk.pl" class="contact-link">druk@plikdruk.pl</a>
+      Możesz również skorzystać z naszej poczty e-mail: <a href="mailto:druk@plikdruk.pl">druk@plikdruk.pl</a>
     </p>
     <div class="row justify-content-center">
       <div class="col-lg-6">
