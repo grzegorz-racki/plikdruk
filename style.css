@@ -1,0 +1,393 @@
+/* ===== PODSTAWOWE USTAWIENIA ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+body { 
+  scroll-behavior: smooth; 
+  overflow-x: hidden;
+}
+
+/* ===== ANIMACJE SEKCJI ===== */
+section {
+  opacity: 1;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+section:not(#home) {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0) translate(-50%, -50%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(20, 20) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* ===== NAVBAR ===== */
+.navbar-brand { 
+  transition: 0.3s; 
+}
+
+.navbar-brand:hover { 
+  transform: scale(1.05); 
+  color: #00c8ff !important; 
+}
+
+section[id] { 
+  scroll-margin-top: 40px; 
+}
+
+/* Linki w navbar - podkreślenie od środka */
+.navbar-nav .nav-link {
+  position: relative;
+  padding-bottom: 5px !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  transition: color 0.3s ease;
+  text-align: center;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffffff !important;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #0d6efd;
+  transition: width 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 80%;
+}
+
+/* Wersja mobilna - wycentrowanie */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    text-align: center;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .navbar-nav .nav-item {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
+  
+  .navbar-nav .nav-link {
+    display: inline-block;
+    padding: 10px 0 !important;
+  }
+}
+
+/* ===== NAGŁÓWEK ===== */
+.animated-underline {
+  display: block;
+  height: 6px;
+  width: 0;
+  background: #dc3545;
+  border-radius: 3px;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  transition: width 1s ease;
+}
+
+#home h1.loaded .animated-underline { 
+  width: 100%; 
+}
+
+/* ===== OFERTA ===== */
+#about i { 
+  transition: 0.3s; 
+}
+
+#about i:hover { 
+  transform: scale(1.15); 
+}
+
+#about .col-md-6, 
+#about li {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about .col-md-6:hover {
+  transform: translateY(-5px);
+}
+
+#about li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* ===== CENNIK ===== */
+#services table { 
+  background: #f8f9fa; 
+  border-radius: 8px; 
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#services h4::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #0d6efd;
+  margin-top: 4px;
+  transition: 0.3s;
+}
+
+#services h4:hover::after { 
+  width: 100px; 
+}
+
+/* Przyciski w cenniku */
+#services .btn-outline-dark,
+footer .btn-outline-dark {
+  transition: all 0.3s ease;
+  border-width: 2px !important;
+  font-weight: 500;
+  background-color: transparent;
+  border-color: #6c757d;
+  text-decoration: none !important;
+}
+
+#services .btn-outline-dark {
+  color: #212529 !important;  /* czarny dla cennika */
+}
+
+footer .btn-outline-dark {
+  color: #ccc !important;  /* jasnoszary dla polityki cookie */
+}
+
+#services .btn-outline-dark:hover,
+footer .btn-outline-dark:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15) !important;
+  background-color: #343a40 !important;
+  border-color: #343a40 !important;
+  color: #fff !important;
+}
+
+#services .btn-outline-dark:active,
+footer .btn-outline-dark:active {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+#toggleCennik {
+  transition: all 0.3s ease;
+}
+
+#toggleCennik:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Rozwijany cennik */
+#pelnyCennik.collapsing {
+  transition: all 0.5s ease;
+}
+
+#pelnyCennik .card {
+  animation: fadeScale 0.5s ease;
+}
+
+/* ===== FORMULARZ PRZESYŁANIA PLIKÓW ===== */
+#upload .form-control {
+  border: 1px solid #dee2e6;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+#upload .form-control:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+#upload .form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 8px rgba(13, 110, 253, 0.2);
+}
+
+#upload .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+}
+
+/* ===== COOKIE POPUP ===== */
+#cookiePopup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  animation: fadeIn 0.4s ease;
+}
+
+#cookiePopup .popup-content {
+  background: #fff;
+  padding: 30px;
+  max-width: 600px;
+  margin: 100px auto;
+  border-radius: 8px;
+  position: relative;
+  animation: slideDown 0.4s ease;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 24px;
+  transition: transform 0.2s ease;
+}
+
+.close-btn:hover {
+  transform: scale(1.2);
+  color: #dc3545;
+}
+
+/* Przycisk w popup */
+#cookiePopup .btn-primary {
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+#cookiePopup .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(13, 110, 253, 0.4);
+}
+
+#cookiePopup .btn-primary:active {
+  transform: translateY(0);
+}
+
+#cookiePopup .btn-primary::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.7);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+#cookiePopup .btn-primary:focus:not(:active)::after {
+  animation: ripple 0.6s ease-out;
+}
+
+/* ===== KONTAKT ===== */
+.contact-link {
+  color: #0d6efd;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 400;
+}
+
+.contact-link:hover {
+  color: #003d80;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Mapa */
+iframe {
+  transition: opacity 0.5s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+
+iframe:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== STOPKA ===== */
+footer {
+  position: relative;
+  overflow: hidden;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #fff, transparent);
+  animation: shimmer 3s infinite;
+}
+
+footer a {
+  text-decoration: none !important;
+}
+
+.copyright-text {
+  margin-bottom: 10px;
+}
