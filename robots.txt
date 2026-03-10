@@ -1,10 +1,12 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://plikdruk.pl/sitemap.xml
-
 # Blokada plików technicznych
 Disallow: /cgi-bin/
 Disallow: /wp-admin/
 Disallow: /backup/
-Disallow: /.htaccess
+Disallow: /index.html
+Disallow: /*?
+
+# Mapa strony
+Sitemap: https://plikdruk.pl/sitemap.xml
