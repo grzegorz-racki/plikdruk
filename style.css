@@ -4,7 +4,6 @@ html {
 }
 
 body { 
-  scroll-behavior: smooth; 
   overflow-x: hidden;
 }
 
@@ -12,10 +11,6 @@ body {
 section {
   opacity: 1;
   transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-section:not(#home) {
-  animation: fadeInUp 0.8s ease-out;
 }
 
 @keyframes fadeInUp {
@@ -223,17 +218,17 @@ footer .btn-outline-dark {
 
 #services .btn-outline-dark:hover,
 footer .btn-outline-dark:hover {
-  transform: translateY(-3px) !important;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15) !important;
-  background-color: #343a40 !important;
-  border-color: #343a40 !important;
-  color: #fff !important;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  background-color: #343a40;
+  border-color: #343a40;
+  color: #fff;
 }
 
 #services .btn-outline-dark:active,
 footer .btn-outline-dark:active {
-  transform: translateY(-1px) !important;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #toggleCennik {
