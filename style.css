@@ -352,6 +352,40 @@ footer .btn-outline-dark:active {
   text-decoration: none;
 }
 
+/* ===== LOKALIZACJA NA ZDJĘCIU ===== */
+.img-box {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 560px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.img-box img {
+  width: 100%;
+  display: block;
+}
+
+/* Spotlight */
+.spotlight {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 22% 28% at 64% 50%,
+    transparent 0%,
+    transparent 40%,
+    rgba(0,0,0,0.60) 100%
+  );
+  animation: spotPulse 5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes spotPulse {
+  0%,100% { opacity: 1; }
+  50%      { opacity: 0.1; }
+}
+
 /* Mapa */
 iframe {
   transition: opacity 0.5s ease, box-shadow 0.3s ease;
