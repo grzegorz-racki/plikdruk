@@ -64,10 +64,6 @@ RewriteRule ^(.*)index\.(html?|php)$ https://plikdruk.pl/$1 [R=301,L,NC]
   Require all denied
 </Files>
 
-<Files "send-mail.php">
-  Require all denied
-</Files>
-
 <FilesMatch "\.(htaccess|htpasswd|ini|log|sh|sql|bak|config)$">
   Require all denied
 </FilesMatch>
